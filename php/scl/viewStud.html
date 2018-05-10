@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!--Import Google Icon Font-->
+     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--Import materialize.css-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <title>View Students</title>
+   </head>
+<body>
+    <nav>
+        <div class="nav-wrapper red">
+         <!-- SIDENAV -->
+        
+     
+
+        <a href="#" class="brand-logo center">GSEB School Management</a>
+
+        <ul id="slide-out" class="left side-nav">
+                <li><a href="addSchool.html">Register School</a></li>
+                <li><a href="viewSchool.html">View School</a></li>
+                <li><a href="viewMeri.html">View/Update Student Data</a></li>
+                <li><a href="viewStud.html">View Students</a></li>
+                <li>
+                    <div class="divider"></div>
+                </li>
+               
+            <li><a href="#">Log Out</a></li>
+                </ul>
+                <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+
+    
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="dashboard.html">Home</a></li>
+                    <li><a href="#">Log Out</a></li>
+        </ul>
+        </div>
+    </nav>
+        <div class="container">
+                
+                <div class="row">
+                    <div class="col s12">
+                        <div id="main" class="card">
+                            <div class="card-content">
+                                <span class="card-title"> 
+                                    <h2><b>View/Update Student Data</b></h2>
+                                        <div>
+                                            
+                                                <div class="row">
+
+												<form class="col s12">
+				
+
+		<div class="input-field col s3">
+    <select single>
+      <option value="" disabled selected>Choose Standard</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+    </select>
+    <label>Select Standard</label>
+  </div>
+						<br>	&nbsp&nbsp&nbsp&nbsp							
+<a class="waves-effect waves-light btn">Submit</a>                                            
+
+  
+  
+    
+  </form>
+              
+         <table class="striped ">
+        <thead>
+          <tr>
+              <th>GRNO</th>
+              <th>Name</th>
+              <th>Add Data</th>
+
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Milind Parvatia</td>
+            <th>
+             <!-- Modal Trigger -->
+             <button data-target="modal1" class="btn modal-trigger">More Details</button>
+
+             <!-- Modal Structure -->
+             <div id="modal1" class="modal modal-fixed-footer">
+               <div class="modal-content">
+                
+                  <h4>Student's Information</h4>
+
+                  <div class="row">
+                      <div class="input-field col s6">
+                        <input id="first_name" type="text" class="validate">
+                        <label for="first_name">First Name</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Last Name</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input id="parent_name" type="text" class="validate">
+                        <label for="parent_name">Parent's Name</label>
+                      </div>
+                      <div class="input-field col s6">
+                              <input id="parent_email" type="email" class="validate">
+                              <label for="parent_email">Parent's email</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                          <div class="input-field col s6">
+                            <input id="std" type="number" class="validate">
+                            <label for="standard">Standard</label>
+                          </div>
+                          <div class="input-field col s6">
+                                  <input id="Contact" type="number" class="validate">
+                                  <label for="Contact">Contact</label>
+                          </div>
+                      </div>
+                      <div class="row">
+                              <div class="input-field col s6">
+                                <input id="GR_no" type="number" class="validate">
+                                <label for="GR_no">GR no.</label>
+                              </div>
+                              <div class="input-field col s6">
+                                      <input id="dob" type="text" class="datepicker">
+                                      <label for="dob">Birth Date</label>
+                                    </div>
+                      </div>
+                        <h4>School Academic</h4>
+                        <div class="row">
+                           <div class="input-field col s7">
+                            <input id="percentage" type="number" class="validate">
+                            <label for="percentage">Percentage</label>
+                          </div>
+                        </div>
+                                      
+                                        <h4>Extra Curriculum</h4>
+                                        <div class="card-content">
+                                            <span class="card-title">Academic</span>
+                                            <div class="row">
+                                              <form id="task-form1">
+                                                <div class="input-field col s12">
+                                                  <input type="text" name="task" id="task">
+                                                  <label for="task">New Certificate</label>
+                                                </div>
+                                                <input type="submit" value="Add Certificate" class="btn">
+                                              </form>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                              <input name="group1" type="radio" id="test1" />
+                                              <label for="test1">District</label>
+                                            
+                                              <input name="group1" type="radio" id="test2" />
+                                              <label for="test2">State</label>
+                                              
+                                              <input name="group1" type="radio" id="test3" />
+                                              <label for="test3">Nation</label>
+                                            
+                                              <input name="group1" type="radio" id="test4" />
+                                              <label for="test4">International</label>
+                                      </div>
+                          
+                                      <div class="row">
+                                          <input name="group2" type="radio" id="1" />
+                                          <label for="1">First</label>
+                                        
+                                          <input name="group2" type="radio" id="2" />
+                                          <label for="2">Second</label>
+                                          
+                                          <input name="group2" type="radio" id="3" />
+                                          <label for="3">Third</label>
+                                        
+                                          <input name="group2" type="radio" id="4" />
+                                          <label for="4">Participation</label>
+                                  </div>
+                                  
+                                  <div class="file-field input-field">
+                                      <div class="btn">
+                                        <span>File</span>
+                                        <input type="file">
+                                      </div>
+                                      <div class="file-path-wrapper">
+                                        <input class="file-path validate" type="text">
+                                      </div>
+                                    </div>
+
+
+
+                                    <div class="card-content">
+                                        <span class="card-title">Sports</span>
+                                        <div class="row">
+                                            <form id="task-form2">
+                                                <div class="input-field col s12">
+                                                  <input type="text" name="task" id="task">
+                                                  <label for="task">New Certificate</label>
+                                                </div>
+                                                <input type="submit" value="Add Certificate" class="btn">
+                                              </form>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                          <input name="group1" type="radio" id="test1" />
+                                          <label for="test1">District</label>
+                                        
+                                          <input name="group1" type="radio" id="test2" />
+                                          <label for="test2">State</label>
+                                          
+                                          <input name="group1" type="radio" id="test3" />
+                                          <label for="test3">Nation</label>
+                                        
+                                          <input name="group1" type="radio" id="test4" />
+                                          <label for="test4">International</label>
+                                  </div>
+                      
+                                  <div class="row">
+                                      <input name="group2" type="radio" id="1" />
+                                      <label for="1">First</label>
+                                    
+                                      <input name="group2" type="radio" id="2" />
+                                      <label for="2">Second</label>
+                                      
+                                      <input name="group2" type="radio" id="3" />
+                                      <label for="3">Third</label>
+                                    
+                                      <input name="group2" type="radio" id="4" />
+                                      <label for="4">Participation</label>
+                              </div>
+                              
+                              <div class="file-field input-field">
+                                  <div class="btn">
+                                    <span>File</span>
+                                    <input type="file">
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text">
+                                  </div>
+                                </div>
+
+
+
+
+                                <div class="card-content">
+                                    <span class="card-title">Cultural</span>
+                                    <div class="row">
+                                        <form id="task-form3">
+                                            <div class="input-field col s12">
+                                              <input type="text" name="task" id="task">
+                                              <label for="task">New Certificate</label>
+                                            </div>
+                                            <input type="submit" value="Add Certificate" class="btn">
+                                          </form>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                      <input name="group1" type="radio" id="test1" />
+                                      <label for="test1">District</label>
+                                    
+                                      <input name="group1" type="radio" id="test2" />
+                                      <label for="test2">State</label>
+                                      
+                                      <input name="group1" type="radio" id="test3" />
+                                      <label for="test3">Nation</label>
+                                    
+                                      <input name="group1" type="radio" id="test4" />
+                                      <label for="test4">International</label>
+                              </div>
+                  
+                              <div class="row">
+                                  <input name="group2" type="radio" id="1" />
+                                  <label for="1">First</label>
+                                
+                                  <input name="group2" type="radio" id="2" />
+                                  <label for="2">Second</label>
+                                  
+                                  <input name="group2" type="radio" id="3" />
+                                  <label for="3">Third</label>
+                                
+                                  <input name="group2" type="radio" id="4" />
+                                  <label for="4">Participation</label>
+                          </div>
+                          
+                          <div class="file-field input-field">
+                              <div class="btn">
+                                <span>File</span>
+                                <input type="file">
+                              </div>
+                              <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text">
+                              </div>
+                            </div>
+                          
+                              
+                        <div class="card-action">
+                          <h5 id="task-title">All Certificate</h5>
+                          
+                          <ul class="collection"></ul>
+                          <a href="#" class="clear-tasks btn black">Clear Certificate</a>
+                        </div>
+                              
+              </div>
+                  <div class="modal-footer">
+                      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+                  </div>
+            </div>
+             
+            </th>
+          </tr>
+          <tr>
+            <td>2</td>
+      <td>Himanshu Surana</td>
+      </th>
+      <th>
+         <!-- Modal Trigger -->
+         <button data-target="modal1" class="btn modal-trigger">More Details</button>
+
+      </th>
+          </tr>
+          <tr>
+		  <td>3</td>
+            <td>harsh shah</td>
+            <th>
+               <!-- Modal Trigger -->
+             <button data-target="modal1" class="btn modal-trigger">More Details</button>
+
+            </th>
+          </tr> 
+		  <tr>
+		  <td>4</td>
+            <td>Keval Shah</td>
+            <th>
+               <!-- Modal Trigger -->
+             <button data-target="modal1" class="btn modal-trigger">More Details</button>
+
+            </th>
+          </tr>
+        </tbody>
+      </table>  
+                                                        </div>
+                                                      </div>    
+                                        </span>
+                                </div>
+                 
+                            
+                    </div>
+                </div>
+            </div> 
+            </div> 
+
+            
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+	 $(document).ready(function(){
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
+
+	$(document).ready(function() {
+    $('select').material_select();
+  });
+       $(".button-collapse").sideNav();
+
+        // Init Sidenav
+        $('.button-collapse').sideNav();
+    </script>
+    <script>
+         $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15, // Creates a dropdown of 15 years to control year,
+    today: 'Today',
+    clear: 'Clear',
+    close: 'Ok',
+    closeOnSelect: false // Close upon selecting a date,
+  });
+    </script>
+</body>
+</html>
